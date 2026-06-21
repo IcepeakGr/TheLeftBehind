@@ -1,0 +1,23 @@
+# --- Maven Build Artifacts ---
+target/
+*.jar
+*.war
+*.ear
+*.tar.gz
+
+# --- VS Code Configurations ---
+.vscode/
+*.code-workspace
+
+# --- Java Compiler & Tooling Files ---
+*.class
+.classpath
+.project
+.settings/
+.factorypath
+
+# --- OS Specific Files ---
+.DS_Store
+Thumbs.db
+log/
+*.log

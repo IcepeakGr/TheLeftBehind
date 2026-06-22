@@ -7,7 +7,6 @@ import java.util.UUID;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.icepeak.MainClass;
-import com.icepeak.mechanisms.ProfileManager;
 import com.icepeak.mechanisms.SurvivorProfile;
 
 public class YamlManager {
@@ -61,7 +60,7 @@ public class YamlManager {
         } catch (IOException e) {
             plugin.getLogger().severe("Could not load .yml data for UUID: " + uuid);
         }
-        
+
         return profile;
     }
 

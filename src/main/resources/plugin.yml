@@ -4,3 +4,10 @@ main: com.icepeak.MainClass
 api-version: 1.17
 author: icepeak (aka Pagokolwnas)
 description: A zombie apocalypse plugin inspired by TheWalkingDead series.
+
+commands:
+  getmedkit:
+    description: Get a medkit
+    usage: /getmedkit [amount]
+    aliases: [medkit, spawnmedkit]
+    permission: theleftbehind.user.medkit

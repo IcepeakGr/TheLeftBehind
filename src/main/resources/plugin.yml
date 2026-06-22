@@ -1,6 +1,6 @@
 name: TheLeftBehind
 version: 1.0-SNAPSHOT
-main: com.icepeak.theleftbehind.MainClass
+main: com.icepeak.MainClass
 api-version: 1.17
 author: icepeak (aka Pagokolwnas)
 description: A zombie apocalypse plugin inspired by TheWalkingDead series.

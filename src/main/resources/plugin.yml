@@ -11,3 +11,8 @@ commands:
     usage: /getmedkit [amount]
     aliases: [medkit, spawnmedkit]
     permission: theleftbehind.user.medkit
+  getpistol:
+    description: Get a pistol
+    usage: /getpistol [amount]
+    aliases: [pistol, spawnpistol]
+    permission: theleftbehind.user.pistol

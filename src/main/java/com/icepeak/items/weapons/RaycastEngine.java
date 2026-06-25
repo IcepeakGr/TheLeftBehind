@@ -73,7 +73,7 @@ public class RaycastEngine {
             target.damage(gun.getDamage(), player);
 
 
-            Location hitLocation = result.getHitPosition().toLocation(player.getWorld());
+            //Location hitLocation = result.getHitPosition().toLocation(player.getWorld());
             //player.getWorld().playSound(hitLocation, Sound.ENTITY_ITEM_BREAK, 0.8f, 0.5f);
         }
 

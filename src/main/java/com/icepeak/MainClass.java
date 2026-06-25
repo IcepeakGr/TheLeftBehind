@@ -7,9 +7,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.icepeak.commands.GetMedKitCommand;
 import com.icepeak.commands.GetPistolCommand;
 import com.icepeak.listeners.CancelHandSwapListener;
+import com.icepeak.listeners.DeathDropProfileListener;
 import com.icepeak.listeners.PistolFireListener;
 import com.icepeak.listeners.PlayerJoinListener;
 import com.icepeak.listeners.PlayerQuitListener;
+import com.icepeak.listeners.ZombieBiteListener;
 import com.icepeak.mechanisms.HudEngine;
 import com.icepeak.mechanisms.ProfileManager;
 
@@ -63,6 +65,8 @@ public class MainClass extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerQuitListener(profileManager), this);
         getServer().getPluginManager().registerEvents(new PistolFireListener(), this);
         getServer().getPluginManager().registerEvents(new CancelHandSwapListener(), this);
+        getServer().getPluginManager().registerEvents(new ZombieBiteListener(profileManager), this);
+        getServer().getPluginManager().registerEvents(new DeathDropProfileListener(profileManager), this);
     }
 
     public void loadMedKitCommands() {
